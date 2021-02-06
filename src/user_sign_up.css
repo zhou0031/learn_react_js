@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.full-screen-container {
+  background: linear-gradient(to right, #fc5f04, #f7e685);
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-container {
+  background-color: hsla(201, 57%, 64%, 0.3);
+  padding: 50px 30px;
+  min-width: 400px;
+  max-width: 500px;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.sign-up-title {
+  color: white;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  font-weight: 100;
+}
+
+.sign-up-input-group {
+  margin: 0;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.sign-up-input-group input {
+  font-size: 1.5em;
+  padding: 0.1em 0.25em;
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(192, 24%, 68%);
+  outline: none;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  width: 100%;
+}
+.sign-up-input-group input:focus {
+  border: 3px solid rgb(85, 99, 231);
+}
+
+.sign-up-input-group input::placeholder {
+  color: rgb(0, 0, 0);
+  opacity: 0.5;
+}
+
+/******************************************/
+
+.sign-up-input-group .error-group {
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 0, 0);
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 100%;
+  top: 20%;
+}
+
+.sign-up-input-group .error-group .arrow {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid rgb(255, 0, 0);
+}
+
+.sign-up-input-group .error-group p {
+  margin: 0;
+  margin-left: 5px;
+  padding: 0;
+  white-space: nowrap;
+}
+/*****************************************/
+@media only screen and (max-width: 1000px) {
+  .sign-up-input-group {
+    position: unset;
+  }
+  .sign-up-input-group .error-group {
+    position: unset;
+    left: unset;
+    top: unset;
+  }
+
+  .sign-up-input-group .error-group .arrow {
+    display: none;
+  }
+}
