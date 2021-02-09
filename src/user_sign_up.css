@@ -35,7 +35,7 @@ body {
   margin: 0;
   margin-bottom: 40px;
   font-size: 2.5em;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .sign-up-input-group {
@@ -64,6 +64,33 @@ body {
   opacity: 0.5;
 }
 
+.sign-up-button {
+  width: 100%;
+  padding: 10px 3px;
+  border-radius: 5px;
+  border: 1px solid hsl(201, 100%, 50%);
+  background-color: hsla(201, 100%, 50%, 0.8);
+  outline: none;
+  font-size: 1em;
+  font-weight: 300;
+  color: white;
+  cursor: pointer;
+}
+
+.sign-up-button:hover {
+  background-color: hsla(201, 100%, 90%, 0.3);
+}
+.sign-up-button:active {
+  background-color: hsla(201, 100%, 90%, 0.5);
+}
+
+.cancel-link {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+}
 /******************************************/
 
 .sign-up-input-group .error-group {
@@ -102,8 +129,20 @@ body {
     left: unset;
     top: unset;
   }
-
   .sign-up-input-group .error-group .arrow {
     display: none;
+  }
+}
+
+@media only screen and (max-height: 460px) {
+  .full-screen-container {
+    background: none;
+  }
+  .sign-up-container {
+    background: none;
+    height: 100vh;
+  }
+  .sign-up-title {
+    color: black;
   }
 }
