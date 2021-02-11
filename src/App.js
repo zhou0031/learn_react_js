@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import "./user_sign_up.css"
+import "./user_signup.css"
 import * as EmailValidator from 'email-validator'
 
 
@@ -43,7 +43,7 @@ function App() {
             onChange={e=>setEmail(e.target.value)}/> 
             <div className="error-group" style={emailErrorDislay}>
               <div className="arrow"/>
-              <p className="error-message">Email already existed/此用户已注册</p>
+              <p className="error-message">Email already existed/此用户已存在</p>
             </div>
           </div>   
 
